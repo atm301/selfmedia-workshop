@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Event","name":"自媒體經營開發陌生客戶 3 小時工作坊","startDate":"2026-10-02T13:30+08:00","endDate":"2026-10-02T16:30+08:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"台中","address":{"@type":"PostalAddress","addressLocality":"台中市","addressCountry":"TW"}},"performer":{"@type":"Person","name":"何佳勳（小圭）"},"organizer":{"@type":"Organization","name":"圭話行銷股份有限公司","url":"https://atmarketing.tw/"},"description":"FB 增粉 × LINE 遊戲化 × 議題內容行銷：內容矩陣、增粉公式、AI 協作、遊戲化因子、創風跟風隨風。"}
+{"@context":"https://schema.org","@type":"Event","name":"自媒體經營開發陌生客戶 3 小時工作坊","startDate":"2026-10-19T13:30+08:00","endDate":"2026-10-19T16:30+08:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"課程現場","address":{"@type":"PostalAddress","addressCountry":"TW"}},"performer":{"@type":"Person","name":"何佳勳（小圭）"},"organizer":{"@type":"Organization","name":"圭話行銷股份有限公司","url":"https://atmarketing.tw/"},"description":"FB 增粉 × LINE 遊戲化 × 議題內容行銷：內容矩陣、增粉公式、AI 協作、遊戲化因子、創風跟風隨風。"}
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDJD1YVHR7"></script>
 <script>
@@ -233,7 +233,7 @@
 
 <header class="top">
   <div class="wrap">
-    <div class="topbar"><div class="logo">📣 自媒體經營開發陌生客戶<small>FB 增粉 × LINE 遊戲化 × 議題內容行銷 · 10/2 台中</small></div></div>
+    <div class="topbar"><div class="logo">📣 自媒體經營開發陌生客戶<small>FB 增粉 × LINE 遊戲化 × 議題內容行銷 · 10/19</small></div></div>
     <div class="tabwrap">
     <nav class="tabs" id="tabs" role="tablist">
       <button class="tab-btn on" data-tab="start" type="button">🚀 開始</button>
@@ -256,7 +256,7 @@
       <span class="kicker">3 小時下午場實戰工作坊</span>
       <h1>自媒體經營<br>開發陌生客戶</h1>
       <p class="sub"><b>FB 增粉 × LINE 遊戲化 × 議題內容行銷</b><br>陌生客不會因為一篇貼文就買車，但會因為一篇貼文記住你。</p>
-      <div class="meta"><span>📅 10/2 台中</span><span>🎤 何佳勳（小圭）</span><span>圭話行銷創辦人｜行銷部落 酋長｜《CRM 大商機》作者</span></div>
+      <div class="meta"><span>📅 10/19 下午場</span><span>🎤 何佳勳（小圭）</span><span>圭話行銷創辦人｜行銷部落 酋長｜《CRM 大商機》作者</span></div>
       <div class="hero-btns">
         <button class="btn btn-light" id="heroReg" type="button">🙋 報到（選組別＋填暱稱）</button>
         <button class="btn btn-mint" type="button" onclick="switchTab('prompts')">📋 直接看提示詞</button>
@@ -859,7 +859,7 @@
   <label for="regNick">暱稱 *</label>
   <input id="regNick" type="text" maxlength="18" placeholder="例如：小圭">
   <label for="regOffice">營業所或單位（選填）</label>
-  <input id="regOffice" type="text" maxlength="24" placeholder="例如：台中營業所">
+  <input id="regOffice" type="text" maxlength="24" placeholder="例如：第一營業所">
   <div class="err" id="regErr">請選組別，並填寫暱稱</div>
   <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px" id="regBtn" type="button">開始 ▶</button>
   <a class="skip" href="#" id="regSkip">先逛逛，等等再報到</a>
@@ -876,7 +876,7 @@
   var KEY='sb_publishable_Tuj9p4DXvO-jEqVcBnumTg_TqZ1NnRu';
   var COURSE='selfmedia-workshop', STORE='selfmedia1002_v1', BUCKET='lw-workshop';
   var GROUPS=['第1組','第2組','第3組','第4組','第5組','第6組','第7組','第8組'];
-  var UTM='utm_source=selfmedia-workshop&utm_medium=workshop&utm_campaign=selfmedia-1002';
+  var UTM='utm_source=selfmedia-workshop&utm_medium=workshop&utm_campaign=selfmedia-1019';
   function todayStr(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
   var COHORT=(new URLSearchParams(location.search).get('c')||'').trim()||todayStr();
   function H(){return {apikey:KEY,Authorization:'Bearer '+KEY};}
@@ -891,7 +891,7 @@
   /* ---------- 提示詞 ---------- */
   var PROMPTS=[
     {id:'c1',g:'core',t:'實作 1：標題與貼文產生器',src:'簡報 p.46 ＋ 提示詞集 1',b:
-'第一步：先要標題\n我是＿＿＿＿，我賣＿＿＿＿，特色是＿＿＿＿，想要＿＿＿＿來買，他們最在意＿＿＿＿。\n請給我 10 個高點閱率的 FB 貼文標題，每個 20 字內，用不同切角（數字、提問、反差、痛點、好處），語氣像朋友說話。\n\n例如：我是 XX 汽車台中業代小明，我賣 XX 車，特色是交車後三年回廠全程陪同，想要 30 到 45 歲首購家庭來買，他們最在意安全和月付金額。\n\n第二步：一句一句往下問\n延伸標題－根據第 X 個再產出 10 個標題\n社群文案－根據第 X 個標題，寫一篇 200 字內的 FB 貼文，結尾請大家私訊或加 LINE\n加上標籤－根據上面給我 5 個 hashtag\n產生圖片－根據上面做（設計）一張社群用圖'},
+'第一步：先要標題\n我是＿＿＿＿，我賣＿＿＿＿，特色是＿＿＿＿，想要＿＿＿＿來買，他們最在意＿＿＿＿。\n請給我 10 個高點閱率的 FB 貼文標題，每個 20 字內，用不同切角（數字、提問、反差、痛點、好處），語氣像朋友說話。\n\n例如：我是 XX 汽車業代小明，我賣 XX 車，特色是交車後三年回廠全程陪同，想要 30 到 45 歲首購家庭來買，他們最在意安全和月付金額。\n\n第二步：一句一句往下問\n延伸標題－根據第 X 個再產出 10 個標題\n社群文案－根據第 X 個標題，寫一篇 200 字內的 FB 貼文，結尾請大家私訊或加 LINE\n加上標籤－根據上面給我 5 個 hashtag\n產生圖片－根據上面做（設計）一張社群用圖'},
     {id:'c2',g:'core',t:'實作 2：社群主圖產生器',src:'簡報 p.50 ＋ 提示詞集 2',b:
 '請根據下面這篇貼文，幫我設計 1 張 FB 貼文主圖。\n\n貼文內容：「＿＿＿＿（貼上實作 1 的貼文）」\n\n步驟一：先給我 3 個圖片構想，每個用一句話說明主體、場景與情緒。\n步驟二：我選定第 ＿ 個後，請直接生成圖片，規格如下：\n主體：＿＿＿＿（例如：一台白色休旅車與一家三口）\n場景：＿＿＿＿（例如：週末海邊停車場、傍晚自然光）\n風格：真實攝影風格，淺景深，商業質感\n色調：以「＿＿＿＿」色為主，整體明亮乾淨\n尺寸：1:1 正方形\n不要出現：任何文字、Logo、浮水印、多餘的人物\n畫面右下角留白，方便之後放品牌標語。\n\n（想用真實車款，改用 Gemini 並上傳自己拍的車輛照片，說「保留車輛外觀不變，只換場景」；正式發文前記得確認公司對車輛影像的使用規範。）'},
     {id:'c3',g:'core',t:'實作 3：遊戲化活動企劃顧問',src:'簡報 p.91 ＋ 提示詞集 3',b:
@@ -968,7 +968,7 @@
     q1:{q:'PART 1 加分題：下面哪一種做法最能提高「追蹤理由」？',o:[['A','每天發 3 篇車款促銷貼文'],['B','每週三固定發一集「業代答客問」'],['C','把公司公告全部轉貼到個人帳號'],['D','只在有優惠的時候才發文']],ans:'B',
       why:'追蹤的本質是「我以後還想看」。固定欄目與系列化內容給粉絲一個明確的期待：每週三會有新的一集。',
       ext:'A 只有促銷，粉絲沒有理由持續看；C 公告是為公司寫的，不是為粉絲寫的；D 不定期發文，演算法與粉絲都會忘了你。固定欄目的名稱最好能寫進個人簡介，讓陌生客第一眼就知道追蹤能得到什麼。'},
-    q2:{q:'PART 1 加分題：請 AI 寫貼文時，下面哪個提示詞最有可能得到好結果？',o:[['A','幫我寫一篇貼文'],['B','幫我寫一篇新車的貼文，要吸引人'],['C','我是台中 TOYOTA 業代，客群是首購家庭，目的是引導私訊預約賞車，請給 10 個標題'],['D','幫我寫 10 篇貼文，越多越好']],ans:'C',
+    q2:{q:'PART 1 加分題：請 AI 寫貼文時，下面哪個提示詞最有可能得到好結果？',o:[['A','幫我寫一篇貼文'],['B','幫我寫一篇新車的貼文，要吸引人'],['C','我是 TOYOTA 業代，客群是首購家庭，目的是引導私訊預約賞車，請給 10 個標題'],['D','幫我寫 10 篇貼文，越多越好']],ans:'C',
       why:'AI 的輸出品質取決於你給的素材。C 說清楚了「我是誰、賣什麼、給誰看、要達成什麼」，AI 才能對準。',
       ext:'A 與 B 沒有受眾與目的，只會得到通用文案；D 數量多但沒有方向，改起來更花時間。記住口訣：先給素材，再要標題，最後改內容。'},
     q3:{q:'PART 2 加分題：想讓舊車主「定期回廠並介紹朋友」，最適合先用哪個遊戲化因子？',o:[['A','排行榜：公布本月買最貴車的客人'],['B','點數＋進度條：回廠或介紹朋友各集 1 點，集 3 點換洗車券'],['C','徽章：買第二台車才頒發金牌車主'],['D','一次性大抽獎：回廠就抽 iPhone']],ans:'B',
@@ -1392,7 +1392,7 @@
     var n=state.d21.filter(Boolean).length;
     document.getElementById('printCard').innerHTML=
       '<div style="border:3px solid #0f6166;border-radius:16px;padding:32px;max-width:720px;margin:0 auto;font-family:\'Noto Sans TC\',sans-serif;color:#17282a">'
-      +'<div style="font-size:.85rem;color:#0f6166;font-weight:800">自媒體經營開發陌生客戶 · 10/2 台中</div>'
+      +'<div style="font-size:.85rem;color:#0f6166;font-weight:800">自媒體經營開發陌生客戶 · 10/19</div>'
       +'<h2 style="font-size:1.5rem;margin:8px 0 4px">我的 21 天行動計畫</h2>'
       +'<div style="color:#6c8285;font-size:.9rem;margin-bottom:14px">'+esc(state.grp||'')+' '+esc(state.nick||'')+'　已勾 '+n+' / 9</div>'
       +D21.map(function(c,i){return '<div style="margin:7px 0;font-size:.95rem">'+(state.d21[i]?'☑':'☐')+' <b>'+c[0]+'</b>　'+esc(c[1])+'</div>';}).join('')
